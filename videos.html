@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Videos — Smart Hotel Group</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .video-hero {
+      background: linear-gradient(135deg, #060f1e 0%, #0b1a35 60%, #0f2247 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 160px 5% 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .video-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 70% at 80% 40%, rgba(196,154,42,0.07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .video-hero-inner {
+      max-width: 700px;
+      position: relative;
+    }
+
+    /* Larger video wrapper */
+    .video-feature {
+      position: relative;
+      width: 100%;
+      background: #000;
+      border-radius: 4px 4px 0 0;
+      overflow: hidden;
+    }
+
+    .video-feature video {
+      width: 100%;
+      display: block;
+      max-height: 480px;
+      object-fit: contain;
+      background: #000;
+    }
+
+    .video-overlay-label {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background: rgba(11,26,53,0.85);
+      border: 1px solid var(--border);
+      color: var(--gold);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.7rem;
+      border-radius: 2px;
+      backdrop-filter: blur(4px);
+    }
+
+    .video-main-card {
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+      background: rgba(255,255,255,0.02);
+      transition: border-color 0.25s;
+    }
+
+    .video-main-card:hover {
+      border-color: rgba(196,154,42,0.4);
+    }
+
+    .video-main-body {
+      padding: 2rem;
+    }
+
+    .video-main-body h2 {
+      font-family: var(--font-heading);
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: var(--white);
+      margin-bottom: 0.75rem;
+    }
+
+    .video-main-body p {
+      font-size: 0.9rem;
+      color: var(--grey);
+      line-height: 1.75;
+      margin-bottom: 1rem;
+    }
+
+    .video-meta {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-top: 1.25rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .video-meta-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    .video-meta-label {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .video-meta-value {
+      font-size: 0.85rem;
+      color: var(--off-white);
+    }
+
+    .videos-full-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    /* Key timestamps / highlights list */
+    .highlight-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      margin-top: 1rem;
+    }
+
+    .highlight-list li {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      font-size: 0.85rem;
+      color: var(--grey);
+      line-height: 1.5;
+    }
+
+    .highlight-list li .hl-num {
+      color: var(--gold);
+      font-weight: 600;
+      font-family: var(--font-heading);
+      font-size: 1rem;
+      min-width: 28px;
+      margin-top: -1px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html" class="nav-logo">Smart Hotel <span>Group</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="system.html">The System</a></li>
+      <li><a href="videos.html" class="active">Videos</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="video-hero">
+    <div class="video-hero-inner">
+      <div class="section-eyebrow" style="margin-bottom:0.75rem">Autotec — One-Key System</div>
+      <h1 style="font-family:var(--font-heading); font-size:clamp(2.4rem,5vw,4rem); font-weight:300; color:var(--white); line-height:1.1; margin-bottom:1rem;">
+        See the <em style="font-style:italic; color:var(--gold-light)">System</em> in Action
+      </h1>
+      <p style="font-size:1rem; color:var(--grey); line-height:1.8; max-width:540px;">
+        Two detailed briefing videos from Autotec and the Smart Hotel Group — covering the full One-Key business model, product demonstration, and the cost-benefit case for UK hotel owners.
+      </p>
+    </div>
+  </header>
+
+  <!-- VIDEOS SECTION -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="videos-full-grid">
+
+        <!-- VIDEO 1 -->
+        <div class="video-main-card">
+          <div class="video-feature">
+            <div class="video-overlay-label">Presentation · Part I</div>
+            <video controls preload="metadata">
+              <source src="WhatsApp Video 2026-03-19 at 04.18.04.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="video-main-body">
+            <div class="video-tag">System Overview</div>
+            <h2>The Smart Hotel Revolution — Full Briefing</h2>
+            <p>
+              A comprehensive walkthrough of the Autotec / Smart Hotel business model. This presentation covers the core concept of applying modular EV-industry manufacturing principles to hotel construction and renovation, the full product system, and the financial case.
+            </p>
+            <p>
+              The video includes live component demonstrations — showing the 6-in-1 control panel, the wire harness system, ambient lighting scenes, and the plug-and-play installation process. It also presents the verified H World Group data on global hotel rankings and market reach.
+            </p>
+
+            <div style="margin-top:1.5rem">
+              <div class="section-eyebrow" style="margin-bottom:0.75rem; font-size:0.68rem">What This Video Covers</div>
+              <ul class="highlight-list">
+                <li><span class="hl-num">01</span>Core concept: building hotels like Chinese electric vehicles</li>
+                <li><span class="hl-num">02</span>The "Plug-and-Play" (One-Key) solution across three product categories</li>
+                <li><span class="hl-num">03</span>Cost-benefit data for a 100-room hotel over 5 years (57.7% efficiency gain)</li>
+                <li><span class="hl-num">04</span>Live control panel demo: Bright, Dim, Sleep, and Off scenes</li>
+                <li><span class="hl-num">05</span>H World Group scale: 12,000+ hotels, Hanting #1 &amp; Ji Hotel #4 globally</li>
+                <li><span class="hl-num">06</span>Partner incentive package: 30% discount, 5% commission, $500 bonus</li>
+              </ul>
+            </div>
+
+            <div class="video-meta">
+              <div class="video-meta-item">
+                <span class="video-meta-label">Source</span>
+                <span class="video-meta-value">Autotec / Smart Hotel Group</span>
+              </div>
+              <div class="video-meta-item">
+                <span class="video-meta-label">Contact</span>
+                <span class="video-meta-value">Richard Lin · autotec@autotec.com.cn</span>
+              </div>
+              <div class="video-meta-item">
+                <span class="video-meta-label">Recorded</span>
+                <span class="video-meta-value">March 2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- VIDEO 2 -->
+        <div class="video-main-card">
+          <div class="video-feature">
+            <div class="video-overlay-label">Presentation · Part II</div>
+            <video controls preload="metadata">
+              <source src="WhatsApp Video 2026-03-21 at 09.28.34.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="video-main-body">
+            <div class="video-tag">Business Model &amp; UK Opportunity</div>
+            <h2>UK Market Entry — Partnership &amp; Opportunity Briefing</h2>
+            <p>
+              A focused briefing on the UK market opportunity for the Smart Hotel programme. This video covers the strategic rationale for bringing the One-Key system to the UK, the specific opportunities for hotel owners and regional partners, and the step-by-step process for getting started.
+            </p>
+            <p>
+              Includes a breakdown of the partnership structures available — from direct renovation projects to management agreements and regional distribution — and the full support package available to UK partners from the Smart Hotel Group.
+            </p>
+
+            <div style="margin-top:1.5rem">
+              <div class="section-eyebrow" style="margin-bottom:0.75rem; font-size:0.68rem">What This Video Covers</div>
+              <ul class="highlight-list">
+                <li><span class="hl-num">01</span>Why the UK hotel market is the right next step for Smart Hotel Group</li>
+                <li><span class="hl-num">02</span>Target hotel segments: economy, mid-scale, and new developments</li>
+                <li><span class="hl-num">03</span>Partnership structures: renovation, management, acquisition, and distribution</li>
+                <li><span class="hl-num">04</span>Consulting services: feasibility, design integration, supply chain, and oversight</li>
+                <li><span class="hl-num">05</span>H World's international expansion track record (Deutsche Hospitality)</li>
+                <li><span class="hl-num">06</span>How to engage — next steps for interested hotel owners and partners</li>
+              </ul>
+            </div>
+
+            <div class="video-meta">
+              <div class="video-meta-item">
+                <span class="video-meta-label">Source</span>
+                <span class="video-meta-value">Autotec / Smart Hotel Group</span>
+              </div>
+              <div class="video-meta-item">
+                <span class="video-meta-label">Contact</span>
+                <span class="video-meta-value">Richard Lin · autotec@autotec.com.cn</span>
+              </div>
+              <div class="video-meta-item">
+                <span class="video-meta-label">Recorded</span>
+                <span class="video-meta-value">March 2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT STRIP -->
+  <section class="section section-alt">
+    <div class="section-inner" style="text-align:center">
+      <div class="section-eyebrow" style="justify-content:center">After Watching</div>
+      <h2 style="max-width:580px; margin:0 auto 1rem">Interested in bringing Smart Hotel <em>to your property?</em></h2>
+      <div class="gold-divider" style="margin:1rem auto 1.5rem"></div>
+      <p style="color:var(--grey); max-width:500px; margin:0 auto 2rem; font-size:0.93rem; line-height:1.8;">
+        We offer a no-obligation feasibility and cost-benefit analysis tailored to your specific hotel. Get in touch with Richard Lin directly to start the conversation.
+      </p>
+      <div style="display:flex; gap:1.5rem; justify-content:center; flex-wrap:wrap; margin-bottom:2rem">
+        <a href="mailto:autotec@autotec.com.cn" class="btn btn-gold">Email Richard Lin</a>
+        <a href="system.html" class="btn btn-outline">Explore the System →</a>
+      </div>
+      <div style="font-size:0.82rem; color:var(--grey)">
+        WhatsApp: +86 150 0093 1606 &nbsp;·&nbsp; WeChat: kx18121029907
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Smart Hotel Group of Companies</div>
+    <div class="footer-sub">UK Programme · Backed by H World Group</div>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="system.html">The System</a></li>
+      <li><a href="videos.html">Videos</a></li>
+    </ul>
+    <p class="footer-copy">Smart Hotel Group of Companies · Represented by Autotec · Richard Lin · autotec@autotec.com.cn</p>
+  </footer>
+
+</body>
+</html>
